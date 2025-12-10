@@ -13,6 +13,11 @@ __pycache__/
 *.pdf
 *.zip
 
+# Exception: Allow example files
+!examples/
+!Driftmessung_2025-12-02_15-01-15.csv
+!Driftmessung_2025-12-02_15-01-15_subplots_housing_cold_start.png
+
 # IDE files
 .vscode/
 .idea/
