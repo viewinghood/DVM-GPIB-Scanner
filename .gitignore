@@ -1,0 +1,49 @@
+# Backup files
+*.bak
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Data files
+*.csv
+*.png
+*.pdf
+*.zip
+
+# IDE files
+.vscode/
+.idea/
+*.code-workspace
+cursor.code-snippets
+convert_md_to_pdf.bat
+CURSOR_MD_TO_PDF_GUIDE.md
+setup_cursor_shortcut.md
+CURSOR_SNIPPET_SETUP.md
+fix_gpib_permissions.ps1
+README_MD_TO_PDF.md
+fix_visa_permissions_admin.bat
+DMM-GPIB-Scanner-backup.py
+StahlRatioScanner_printer_perfect_plot.py
+StahlRatioScanner_perfect_timescale.py
+PowerSupply_StahlElectronics.zip
+PowerSupply_StahlElectronics.py
+PowerSupply_DeltaElektronika.zip
+PowerSupply_DeltaElektronika_pythonEnding.py
+md2pdf.py
+GPIB_response_IWATSU_VOAC 7513.txt
+md_to_pdf.py
+
+
+# batch files
+*.bat
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

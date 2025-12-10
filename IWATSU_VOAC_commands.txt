@@ -1,0 +1,45 @@
+## file: IWATSU_VOAC_commands.txt
+
+ * Connected to: GPIB0::7::INSTR
+-> *IDN?
+<- DV  +21.8657E-3
+-> C
+<- ERR  NULL DATA 
+-> F0
+<- DV  +17.3703E-3
+-> F1
+<- DV  +18.6571E-3
+-> F5
+-> F7
+-> R9
+-> R6
+<- F   +0.0000E+3
+<- F   +0.0000E+3
+-> G
+<- F   +0.0000E+3
+-> F0
+-> G
+<- DV  +17.7538E-3
+<- DV  +19.7871E-3
+<- DV  +21.6846E-3
+-> X0
+-> G
+<- DV  +18.7154E-3
+-> G
+<- DV  +18.3302E-3
+-> G
+<- DV  +18.5363E-3
+-> G
+<- DV  +18.7811E-3
+-> G
+<- DV  +19.1734E-3
+ * Read Status Byte: 
+<- 0x00, (0)
+-> SYST:ERR?
+<- DV  +19.1734E-3
+<- DV  +19.1734E-3
+ * Read Status Byte: 
+<- 0x20, (32)
+-> G
+<- DV  -28.7961E-3
+
