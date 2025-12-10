@@ -87,6 +87,14 @@ The program will:
 - `StahlRatioScannerPyQtGraph.py`
 - `DMM-GPIB-Scanner.py` (for Keithley 2100 ratio measurements)
 
+#### Example Output
+
+The printer script generates publication-quality plots with multiple time axes for detailed analysis. Below is an example output showing a typical measurement result:
+
+![Example Measurement Plot](Driftmessung_2025-12-02_15-01-15_subplots_housing_cold_start.png)
+
+*Example: Ratio measurement plot showing deviation in ppm with multiple time axes for detailed analysis. Generated from CSV data using `StahlRatioScanner_printer.py`.*
+
 ---
 
 ### 3. StahlRatioScannerPyQtGraph.py
@@ -202,12 +210,15 @@ pip install pyqtgraph PyQt6
 
 ```
 DVM-GPIB-Scanner/
-├── README.md                          # This file
-├── DMM-GPIB-Scanner.py                # Multi-DMM scanner (most versatile)
-├── StahlRatioScanner.py               # Basic Keithley 2100 ratio scanner
-├── StahlRatioScanner_printer.py       # CSV data plotter/visualizer
-├── StahlRatioScannerPyQtGraph.py      # Optimized version for long measurements
-└── IWATSU_VOAC_commands.txt           # Iwatsu VOAC command reference
+├── README.md                                          # This file
+├── LICENSE                                             # MIT License
+├── DMM-GPIB-Scanner.py                                # Multi-DMM scanner (most versatile)
+├── StahlRatioScanner.py                               # Basic Keithley 2100 ratio scanner
+├── StahlRatioScanner_printer.py                      # CSV data plotter/visualizer
+├── StahlRatioScannerPyQtGraph.py                     # Optimized version for long measurements
+├── IWATSU_VOAC_commands.txt                          # Iwatsu VOAC command reference
+├── Driftmessung_2025-12-02_15-01-15.csv              # Example measurement data (CSV)
+└── Driftmessung_2025-12-02_15-01-15_subplots_housing_cold_start.png  # Example plot output
 ```
 
 ---
@@ -243,4 +254,4 @@ Created for precision measurement and data acquisition tasks.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+[Specify your license here]
