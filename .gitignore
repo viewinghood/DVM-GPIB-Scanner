@@ -23,7 +23,27 @@ __pycache__/
 .idea/
 *.code-workspace
 cursor.code-snippets
+<<<<<<< HEAD
 
+=======
+convert_md_to_pdf.bat
+CURSOR_MD_TO_PDF_GUIDE.md
+setup_cursor_shortcut.md
+CURSOR_SNIPPET_SETUP.md
+fix_gpib_permissions.ps1
+README_MD_TO_PDF.md
+fix_visa_permissions_admin.bat
+DMM-GPIB-Scanner-backup.py
+StahlRatioScanner_printer_perfect_plot.py
+StahlRatioScanner_perfect_timescale.py
+PowerSupply_StahlElectronics.zip
+PowerSupply_StahlElectronics.py
+PowerSupply_DeltaElektronika.zip
+PowerSupply_DeltaElektronika_pythonEnding.py
+md2pdf.py
+GPIB_response_IWATSU_VOAC 7513.txt
+md_to_pdf.py
+>>>>>>> 51fd44160093a32ca0266cc2e6852b0f5c3cd075
 
 
 # batch files
@@ -36,3 +56,12 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+<<<<<<< HEAD
+=======
+cursor_fixing_syntax_error_in_python_co.md
+Driftmessung_2025-11-27_15-29-11_terminal_printout.txt
+md_to_pdf_simple.py
+sample_power_supply.py
+scanner-keithley.py
+StahlRatioScannerPyQtGraph_optimized.py
+>>>>>>> 51fd44160093a32ca0266cc2e6852b0f5c3cd075
