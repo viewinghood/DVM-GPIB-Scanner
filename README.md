@@ -203,11 +203,15 @@ pip install pyqtgraph PyQt6
 ```text
 DVM-GPIB-Scanner/
 ├── README.md                          # This file
+├── LICENSE                             # MIT License
 ├── DMM-GPIB-Scanner.py                # Multi-DMM scanner (most versatile)
 ├── StahlRatioScanner.py               # Basic Keithley 2100 ratio scanner
 ├── StahlRatioScanner_printer.py       # CSV data plotter/visualizer
 ├── StahlRatioScannerPyQtGraph.py      # Optimized version for long measurements
-└── IWATSU_VOAC_commands.txt           # Iwatsu VOAC command reference
+├── IWATSU_VOAC_commands.txt           # Iwatsu VOAC command reference
+└── examples/                          # Example measurement data and plots
+    ├── Driftmessung_2025-12-02_15-01-15.csv
+    └── Driftmessung_2025-12-02_15-01-15_subplots_housing_cold_start.png
 ```
 
 ---
