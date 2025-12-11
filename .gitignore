@@ -1,0 +1,38 @@
+# Backup files
+*.bak
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Data files
+*.csv
+*.png
+*.pdf
+*.zip
+
+# Exception: Allow example files
+!examples/
+!Driftmessung_2025-12-02_15-01-15.csv
+!Driftmessung_2025-12-02_15-01-15_subplots_housing_cold_start.png
+
+# IDE files
+.vscode/
+.idea/
+*.code-workspace
+cursor.code-snippets
+
+
+
+# batch files
+*.bat
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
