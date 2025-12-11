@@ -1,5 +1,9 @@
 # DVM-GPIB-Scanner
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-orange)
+
 A collection of Python tools for automated measurement and data acquisition from Digital Multimeters (DMMs) via GPIB interface. These programs support multiple DMM models including Keithley 2100, Iwatsu VOAC 7513, and Prema 6000, with real-time plotting and CSV data logging capabilities.
 
 ## 📋 Overview
