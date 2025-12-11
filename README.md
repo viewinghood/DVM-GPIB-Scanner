@@ -87,6 +87,14 @@ The program will:
 - `StahlRatioScannerPyQtGraph.py`
 - `DMM-GPIB-Scanner.py` (for Keithley 2100 ratio measurements)
 
+#### Example Output
+
+The printer script generates publication-quality plots with multiple time axes for detailed analysis. Below is an example output showing a typical measurement result:
+
+![Example Measurement Plot](examples/Driftmessung_2025-12-02_15-01-15_subplots_housing_cold_start.png)
+
+*Example: Ratio measurement plot showing deviation in ppm with multiple time axes for detailed analysis. Generated from CSV data using `StahlRatioScanner_printer.py`.*
+
 ---
 
 ### 3. StahlRatioScannerPyQtGraph.py
