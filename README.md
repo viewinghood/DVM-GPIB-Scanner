@@ -97,7 +97,7 @@ The printer script generates publication-quality plots with multiple time axes f
 
 ![Example Measurement Plot](examples/Driftmessung_2025-12-02_15-01-15_subplots_housing_cold_start.png)
 
-*Example: Ratio measurement plot showing deviation in ppm with multiple time axes for detailed analysis. Generated from CSV data using `StahlRatioScanner_printer.py`.*
+*Example: Ratio measurement plot showing deviation in ppm with multiple time axes for detailed analysis. Generated from CSV data using `StahlRatioScanner_printer.py`. See the [examples/](examples/) folder for the complete example dataset including CSV data and plot output.*
 
 ---
 
@@ -238,6 +238,10 @@ All programs generate CSV files with the following structure:
 - Optional comments in header
 
 CSV files are automatically named with timestamps for easy identification.
+
+**Example Data**: See the [examples/](examples/) folder for a complete example dataset including:
+- CSV measurement data file
+- Generated plot output (PNG) showing the visualization capabilities
 
 ---
 
