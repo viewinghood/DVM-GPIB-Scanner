@@ -136,16 +136,13 @@ total_time_span_hours = (stop_datetime - start_datetime).total_seconds() / 3600.
 print(f"Total time span: {total_time_span_hours:.2f} hours")
 
 # Determine UNIFORM tick spacing based on TOTAL time span (applies to all subplots)
-# Use 6-hour intervals like in the 3rd subplot for consistency
+# Always use 1-hour intervals for major ticks to show meaningful time separation
 if total_time_span_hours < 1.0:  # Less than 1 hour: use 10-minute intervals
     uniform_major_tick_spacing = 10.0 / 60.0  # 10 minutes in hours
     uniform_minor_tick_spacing = 1.0 / 60.0  # 1 minute minor ticks
-elif total_time_span_hours < 6.0:  # Less than 6 hours: use 1-hour intervals
+else:  # 1 hour or more: always use 1-hour intervals
     uniform_major_tick_spacing = 1.0  # 1 hour
     uniform_minor_tick_spacing = 1.0 / 6  # 10 minutes minor ticks
-else:  # 6 hours or more: use 6-hour intervals (like 3rd subplot)
-    uniform_major_tick_spacing = 6.0  # 6 hours
-    uniform_minor_tick_spacing = 1.0  # 1 hour minor ticks
 
 print(f"Uniform tick spacing: Major={uniform_major_tick_spacing}h, Minor={uniform_minor_tick_spacing}h")
 
@@ -384,7 +381,7 @@ for plot_idx in range(subplots_per_page):
             if actual_time.minute == 0 or (actual_time.minute < 1 and actual_time.second < 30):
                 current_date = actual_time.date()
                 
-                # Check if date changed from previous tick (IMPORTANT: date change indicator)
+                # Always check if date changed from previous tick (IMPORTANT: date change indicator)
                 if previous_tick_date[0] is not None and current_date != previous_tick_date[0]:
                     # Date changed! Show date
                     previous_tick_date[0] = current_date
