@@ -37,8 +37,8 @@ root.title("Select CSV File")
 
 # If only one CSV file, use it automatically
 if len(csv_files) == 1:
-    csv_filename = csv_files[0]
-    print(f"Only one CSV file found, using: {csv_filename}")
+    csv_filename = os.path.join(current_dir, csv_files[0])
+    print(f"Only one CSV file found, using: {csv_files[0]}")
 else:
     # Show file selection dialog
     csv_filename = filedialog.askopenfilename(
@@ -51,13 +51,14 @@ else:
         print("No file selected. Exiting.")
         exit(1)
     
-    # Get just the filename (not full path) for consistency
-    csv_filename = os.path.basename(csv_filename)
+    # csv_filename now contains the full path - keep it for opening the file
+    # Store just the basename for display purposes
+    csv_basename = os.path.basename(csv_filename)
 
 root.destroy()  # Close the dialog window
 
 # Read CSV file
-print(f"Reading CSV file: {csv_filename}")
+print(f"Reading CSV file: {os.path.basename(csv_filename)}")
 
 # Read comments from CSV header
 comments = []
