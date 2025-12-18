@@ -449,13 +449,15 @@ for plot_idx in range(subplots_per_page):
 
 # Overall statistics (only on first subplot)
 if len(ppm_deviations) > 0:
+    # Mean deviation (should be ~0, but calculate for consistency)
     mean_dev = sum(ppm_deviations) / len(ppm_deviations)
     max_dev = max(ppm_deviations)
     min_dev = min(ppm_deviations)
     std_dev = (sum((x - mean_dev)**2 for x in ppm_deviations) / len(ppm_deviations))**0.5
     
+    # Show absolute ratio value for mean (not deviation)
     overall_stats = (f'Overall Statistics:\n'
-                    f'Mean: {mean_dev:.3f} ppm\n'
+                    f'Mean: {total_average_ratio:.5f}\n'
                     f'Max: {max_dev:.3f} ppm\n'
                     f'Min: {min_dev:.3f} ppm\n'
                     f'Std: {std_dev:.3f} ppm\n'
